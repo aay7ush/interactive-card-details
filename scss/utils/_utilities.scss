@@ -1,0 +1,23 @@
+@use "breakpoints" as b;
+
+// Utility Classes
+
+.container {
+  max-width: 400px;
+  margin-bottom: 3rem;
+
+  @include b.breakpoint(lg) {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+}
+
+.btn {
+  padding: 1rem;
+  color: var(--clr-white);
+  background-color: var(--clr-dark-violet);
+  border-radius: 10px;
+}

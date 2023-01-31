@@ -1,0 +1,63 @@
+@use "../utils/" as u;
+
+// Reset
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+a:any-link {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--fs);
+  font-weight: var(--fw-normal);
+  color: var(--clr-dark-violet);
+  background-color: var(--clr-white);
+  min-height: 100vh;
+
+  display: grid;
+  place-content: center;
+
+  background-image: url(../../images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 40vh;
+
+  @include u.breakpoint(lg) {
+    background-image: url(../../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 35vw 100vh;
+  }
+}

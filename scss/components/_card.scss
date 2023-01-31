@@ -1,0 +1,57 @@
+@use "../utils/" as u;
+
+.card__front {
+  position: relative;
+  max-width: 350px;
+  transform: translate(-20px, -40px);
+
+  .card__logo {
+    max-width: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .card__number {
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+  }
+
+  .card__name {
+    color: var(--clr-white);
+    position: absolute;
+    top: 150px;
+    left: 20px;
+  }
+
+  .card__exp-date {
+    color: var(--clr-white);
+    position: absolute;
+    top: 150px;
+    right: 40px;
+  }
+  @include u.breakpoint(lg) {
+    transform: translate(-60px, -210px);
+  }
+}
+
+.card__back {
+  position: relative;
+  max-width: 350px;
+  transform: translate(20px, 45px);
+
+  .card__cvc {
+    color: var(--clr-white);
+    position: absolute;
+    top: 85px;
+    right: 40px;
+  }
+
+  @include u.breakpoint(lg) {
+    transform: translate(0px, 210px);
+  }
+}
