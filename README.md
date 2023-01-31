@@ -14,7 +14,7 @@ Building realistic projects to improve my front-end skills.
 
 ### Links
 
-- Live Site URL: [Interactive card details](https://p1ng-coming-soon.netlify.app/)
+- Live Site URL: [Interactive card details](https://1nteractive-card-details.netlify.app/)
 
 ## Built with
 
